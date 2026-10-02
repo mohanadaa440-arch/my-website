@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>الإجازات المرضية - منصة الخدمات الصحية</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="nav-wrap">
+    <a class="brand" href="#">
+      <span class="brand-mark">صحة</span>
+    </a>
+    <nav>
+      <a href="#">الرئيسية</a>
+      <a href="#">الخدمات</a>
+      <a class="active" href="#">الاستعلامات</a>
+      <a href="#">الأسئلة الشائعة</a>
+      <a href="#">تواصل معنا</a>
+      <a href="#">إنشاء حساب</a>
+    </nav>
+    <a class="login" href="#"><span class="user-icon">◯</span> تسجيل الدخول</a>
+  </div>
+</header>
+
+<main>
+  <section class="page">
+    <div class="logo-area"><span class="brand-mark large">صحة</span></div>
+    <h1>الإجازات المرضية</h1>
+    <p class="intro">خدمة الاستعلام عن الإجازات المرضية تتيح لك الاستعلام عن حالة طلبك للإجازة ويمكنك طباعتها عن طريق تطبيق صحتي</p>
+
+    <form id="queryForm" class="query-card">
+      <div class="query-row">
+        <div class="field">
+          <label for="service">رمز الخدمة</label>
+          <input id="service" name="service" inputmode="numeric" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="id">رقم الهوية / الإقامة</label>
+          <input id="id" name="id" inputmode="numeric" autocomplete="off">
+        </div>
+      </div>
+
+      <div id="result" class="report" aria-live="polite">
+        <div class="info-grid">
+          <div><span>الاسم:</span><strong id="name">—</strong></div>
+          <div><span>اسم المرافق:</span><strong id="companion">—</strong></div>
+          <div><span>صلة القرابة:</span><strong id="relation">—</strong></div>
+          <div><span>تاريخ إصدار تقرير الإجازة:</span><strong id="issueDate">—</strong></div>
+          <div><span>تبدأ من:</span><strong id="from">—</strong></div>
+          <div><span>وحتى:</span><strong id="to">—</strong></div>
+          <div><span>المدة بالأيام:</span><strong id="days">—</strong></div>
+          <div><span>اسم الطبيب:</span><strong id="doctor">—</strong></div>
+          <div><span>المسمى الوظيفي:</span><strong id="job">—</strong></div>
+        </div>
+      </div>
+
+      <button type="submit" class="submit">استعلام</button>
+      <a class="back" href="#">رجوع للاستعلامات</a>
+      <p id="message" class="message"></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-about">
+      <div class="brand-mark footer-logo">صحة</div>
+      <p>منصة صحة تخدم جميع المنشأت الطبية من خلال تقديم الخدمات الصحية إلكترونياً لجميع المنشأت الطبية وتسعى إلى توحيد وأتمتة الاجراءات والخدمات بما في دوره رفع جودة الاداء وخفض التكاليف.</p>
+    </div>
+    <div>
+      <h3>القائمة الرئيسية</h3>
+      <a href="#">الخدمات</a>
+      <a href="#">الاستعلامات</a>
+      <a href="#">الأسئلة الشائعة</a>
+      <a href="#">تواصل معنا</a>
+    </div>
+    <div>
+      <h3>تواصل معنا</h3>
+      <p>920002005</p>
+      <p>support@seha.sa</p>
+      <p>أوقات العمل: الأحد حتى الخميس 8 ص - 11م</p>
+    </div>
+  </div>
+  <div class="copyright">منصة صحة معتمدة من قبل وزارة الصحة © 2026</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
